@@ -1,0 +1,222 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    min-height: 100dvh;
+    background-color: var(--violet);
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.logo-image img {
+    margin-top: 3.3rem;
+    margin-inline-start: 4.3rem;
+    width: 217px;
+    height: auto;
+}
+
+.container {
+    margin-inline-start: 4.7rem;
+    margin-inline-end: 3rem;
+    margin-top: 5.1rem;
+    display: flex;
+    gap: 3.2rem;
+}
+
+.container__img > .illustration-mockups {
+    width: 44.2rem;
+    height: auto;
+}
+
+.container__content {
+    color: #fff;
+    text-align: left;
+}
+
+.container__content-header {
+    font-size: 2.45rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    max-width: 500px;
+    letter-spacing: 0.02rem;
+    margin-bottom: 20px;
+    padding-top: 2.7rem;
+}
+
+.container__content-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    max-width: 520px;
+    margin-bottom: 23px;
+}
+
+.container__content-button {
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    padding-block: 1.1rem;
+    padding-inline: 1rem;
+    border-radius: 40px;
+    color: var(--violet);
+    box-shadow: 2px 2px 10px 0 #00000073;
+    margin-bottom: 70px;
+    width: 39%;
+}
+
+.container__content-button:hover {
+    background-color: var(--softMagenta);
+    color: #fff;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: flex-end;
+    padding-inline-end: 5rem;
+    padding-block-start: 0.9rem;
+    gap: 16px;
+}
+
+.footer__container .fa-brands {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 2.2rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.footer__container > .fa-brands:hover {
+    border-color: var(--softMagenta);
+    color: var(--softMagenta);
+}
+
+/* Media Query */
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1399.98px) {
+    .logo-image img {
+        margin-top: 2.2rem;
+        width: 170px;
+    }
+
+    .container {
+        margin-inline-start: 4rem;
+        margin-top: 3rem;
+        gap: 3rem;
+    }
+
+    .container__img > .illustration-mockups {
+        width: 40rem;
+    }
+
+    .container__content-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1280.98px) {
+    .footer__container {
+        padding-block-end: 0.9rem;
+    }
+}
+
+@media (max-width: 1085.98px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container__img > .illustration-mockups {
+        width: 100%;
+    }
+
+    .container__content-header {
+        max-width: 100%;
+    }
+
+    .container__content-description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    body {
+        background-image: url("images/bg-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+    }
+
+    .container__content-button {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer__container {
+        justify-content: center;
+        padding-inline-end: 0;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 600.98px) {
+    .container {
+        gap: 0;
+    }
+
+    .container__content {
+        text-align: center;
+    }
+
+    .container__content-header {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    .container__content-description {
+        max-width: 100%;
+    }
+
+    .footer__container {
+        gap: 20px;
+    }
+
+    .footer__container .fa-brands {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 576.98px) {
+    .container__content-header {
+        font-size: 1.3rem;
+    }
+
+    .container__content-description {
+        font-size: 0.7rem;
+        line-height: 1.7;
+    }
+
+    .container__content-button {
+        font-size: 1rem;
+        padding-block: 0.8rem;
+    }
+}

@@ -13,12 +13,12 @@ This challenge is designed based on the provided template from Frontend Mentor w
 
 ### Screenshot
 
-![](./Screenshot_Landing_Page.png)
+![Huddle Landing Page](./Screenshot_Landing_Page.png)
 
 ### Links
 
--   Solution URL: [https://github.com/Albrt78/frontend_mentor_project/tree/main/Landing%20Page]
--   Live Site URL: [https://candid-heliotrope-907d3f.netlify.app/]
+-   Solution URL: [Huddle Landing Page](https://github.com/Albrt78/huddlelandingpage.github.io)
+-   Live Site URL: [Huddle Landing Page](https://albrt78.github.io/huddlelandingpage.github.io/)
 
 ### Built with
 

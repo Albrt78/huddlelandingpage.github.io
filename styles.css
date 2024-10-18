@@ -322,7 +322,7 @@ footer {
     }
 }
 
-@media (max-width: 375.98px) {
+@media (max-width: 320.98px) {
     .logo-image img {
         width: 130px;
     }
